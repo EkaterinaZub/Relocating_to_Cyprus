@@ -1,0 +1,22 @@
+
+
+.container {
+    background: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    
+}
+
+.button{
+    width: 180px;
+    background: #FFDB80;
+    border-radius: 30px;
+}
+
+@media(max-width:430px){
+    .button{
+        display: none;
+    }
+}

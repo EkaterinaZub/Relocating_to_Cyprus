@@ -1,0 +1,127 @@
+@import '../../../assets/fonts/fonts.css';
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
+   
+}
+
+.containerImg{
+    background-image: url(../../../assets/images/paradiseImageLeft.png);
+    width: 410px;
+    height: 500px;
+    position: relative;
+}
+.containerImg2{
+    position: relative;
+    width: 410px;
+    height: 500px;
+    background-image: url(../../../assets/images/paradiseImageRight.png);
+}
+
+
+.paradise{
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.header{
+    font-family: 'Avenir Next' 'sans serif';
+    font-size: 40px;
+    font-weight: 600;
+    color: #434364;
+    text-transform: uppercase
+}
+
+.text{
+    font-family: 'Avenir Next';
+    font-size:16px;
+    font-weight: 400;
+    color: #434364;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5;
+    /* text-align: justify;
+    text-align-last: center; */
+}
+
+.button{
+    width: 200px;
+    border-radius: 88px;
+    background: linear-gradient(90.49deg, #FFEB80 0%, #FDBFA3 100.2%);
+}
+
+
+
+
+@media(max-width:1030px){
+    .container{
+        margin-top: 40px;
+        margin-bottom: 40px;
+       
+    }
+    .image{
+        width: 240px;
+    }
+
+    
+    .header{
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .text{
+        margin-bottom: 20px;
+    }
+    .containerImg{
+       background-image: url(../../../assets/images/paradiseImageLeft1000.png);
+       height: 290px;
+       width: 240px;
+      
+    }
+    .containerImg2{
+        background-image: url(../../../assets/images/paradiseImageRight1000.png);
+        width: 240px;
+        height: 290px;
+       
+     }
+}
+
+
+@media(max-width:800px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+       
+       
+    }
+    .image{
+      width: 768px;
+        height: 420px; 
+    }
+    .containerImg{
+        background-image: url(../../../assets/images/paradiseImageLeft768.png);
+       
+       width: 100%;
+    }
+
+    .containerImg2{
+        background-image: url(../../../assets/images/paradiseImageRight768.png);
+        width: 100%;
+       
+       
+     }
+
+     .paradise{
+       padding: 20px;
+     }
+}

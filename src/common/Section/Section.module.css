@@ -1,0 +1,142 @@
+.container{
+    /* height: 680px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient( #FEFC9E -50%, #FDBFA3 100.2%);
+    align-items: center;
+    padding: 50px;
+    
+
+}
+
+.description {
+    width: 580px;
+    font-family: 'Avenir Next' ;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #434364;
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+
+.icons{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+.icon{
+    width: 280px;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.img{
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.header{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #6D31D0;
+    text-align: center;
+}
+
+.text{
+    font-family: 'Avenir Next';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #434364;
+    text-align: center;
+}
+
+.container_title{
+    color: #434364;
+    /* margin-bottom: 20px; */
+}
+
+@media (max-width:1040px){
+    .container{
+        padding: 40px;
+    }
+    .container_title{
+        margin-bottom: 30px;
+    }
+    .icons{
+        
+        gap:20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+    
+    
+    }
+
+}
+@media (max-width:755px){
+    
+    
+    .description {
+        width: 100%;
+       
+    }
+    .icon{
+        width: 190px;
+        height: 100%;
+        margin-bottom: 10px;
+        
+    }
+    .icons{
+        
+        
+        padding-left: 30px;
+        padding-right: 30px;
+        /* flex-direction: column; */
+        
+    
+    
+    }
+}
+
+
+@media (max-width:580px){
+    
+    
+    .icons{
+        
+        /* gap: 20px; */
+        padding-left: 0px;
+        padding-right: 0px;
+        /* flex-direction: column; */
+        
+    
+    
+    }
+}
+
+@media (max-width:480px){
+    .container{
+        padding: 10px;
+    }
+    .container_title{
+        text-align: center;
+    }
+    
+}
+

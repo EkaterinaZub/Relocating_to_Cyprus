@@ -1,0 +1,131 @@
+.map {
+    /* display: flex; */
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.cyprus {
+    max-width: 100%;
+    /* display: flex; */
+}
+
+.larnaka {
+    position: absolute;
+    left: 255px;
+    top: 212px;
+    max-width: 100%;
+    /* z-index: 1; */
+    /* bottom: 20px; */
+
+}
+
+.limassol {
+    position: absolute;
+    left: 112px;
+    top: 267px;
+    /* max-width: 100%; */
+}
+
+.nicosia {
+    position: absolute;
+    left: 91px;
+    top: 152px;
+    /* width: 100%; */
+}
+
+.paphos {
+    position: absolute;
+    left: 4px;
+    top: 192px;
+    /* width: 100%; */
+}
+
+@media(max-width:427px) {
+    .limassol {
+
+        max-width: 114px;
+        left: 52px;
+        top: 136px;
+    }
+
+    .larnaka {
+        max-width: 120px;
+        left: 135px;
+        top: 115px;
+    }
+
+    .paphos {
+        max-width: 90px;
+        left: -1px;
+        top: 100px;
+    }
+
+    .nicosia {
+        max-width: 152px;
+        top: 85px;
+        left: 53px;
+
+    }
+
+
+}
+
+@media(max-width:377px) {
+    .limassol {
+
+        max-width: 86px;
+        left: 52px;
+        top: 124px;
+    }
+
+    .larnaka {
+        max-width: 105px;
+        left: 118px;
+        top: 99px;
+    }
+
+    .paphos {
+        max-width: 75px;
+        top: 85px;
+    }
+
+    .nicosia {
+        max-width: 142px;
+        top: 70px;
+        left: 40px;
+
+    }
+
+
+}
+
+@media(max-width:321px) {
+    .limassol {
+
+        max-width: 70px;
+        left: 43px;
+        top: 104px;
+    }
+
+    .larnaka {
+        max-width: 90px;
+        left: 95px;
+        top: 81px;
+    }
+
+    .paphos {
+        max-width: 64px;
+        top: 67px;
+    }
+
+    .nicosia {
+        max-width: 110px;
+        top: 60px;
+        left: 38px;
+
+    }
+
+
+}

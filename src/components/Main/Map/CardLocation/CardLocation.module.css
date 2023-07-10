@@ -1,0 +1,52 @@
+@import '../../../../assets/fonts/fonts.css';
+
+.container{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+max-width: 480px;
+/* max-height: 100%; */
+border-radius: 10px;
+background: #FFFFFF;
+max-height: 660px;
+padding: 10px;
+
+
+}
+
+
+.image{
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 0 10px 0px 0px; */
+ 
+}
+
+.img{
+    border-radius: 10px, 10px, 4px, 4px;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Montserrat' 'sans serif';
+    font-size: 20px;
+    font-weight: 600;
+    color: #434364;
+
+}
+
+.description{
+    padding: 10px 50px 0px 50px;
+    text-align: center;
+    font-family: 'Avenir Next' 'sans serif';
+    font-size: 16px;
+    font-weight: 500;
+    color: #434364;
+}
+
+@media(max-width:460px){
+    .img{
+        max-width: 105px;
+    }
+
+}

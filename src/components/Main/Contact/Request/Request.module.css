@@ -1,0 +1,190 @@
+@import '../../../../assets/fonts/fonts.css';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+   /* width: 200%; */
+    width: 1180px;
+    height: 600px;
+    border-radius: 60px;
+    background: linear-gradient( #e6c8b8 10%, #c995dc 100.2%);
+}
+
+
+
+.header {
+   
+    color: #434364;
+    font-size: 28px;
+  
+    
+}
+
+.form{
+    width: 580px;
+    text-align: center;
+   
+}
+
+.input{
+    
+    width: 280px;
+    height: 47px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-family: 'Avenir Next' 'sans serif';
+    color: #434364;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.message{
+    width: 580px;
+    height: 200px;
+    border: none;
+}
+
+.containet_checkbox{
+    display: flex;
+    margin-top: 20px;
+}
+.checkbox {
+    /* display: flex; */
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    opacity: 0;
+    border: 1px solid #FFFFFF;
+    
+}
+
+/* .checkbox ~ label::before{
+    .checkbox{
+        opacity: 0;
+    } 
+    
+} */
+
+   
+.checkbox ~ label::before{
+    content: '';  
+    align-items: center;
+  text-align: center;
+  color:#FFFFFF;
+  /* line-height: 1em; */
+  width: 32px;
+  height: 32px;
+  border: 1px solid #FFFFFF;
+  border-radius: 0.25em;
+  margin-left: -30px;
+  display: inline-block;
+ 
+}
+.checkbox:checked ~ label::before {
+    content: '\2713';
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.text{
+    font-family: 'Avenir Next' 'sans serif';
+    color: #434364;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+    text-align: start;
+}
+
+.link{
+    color: #6D31D0;
+}
+
+.button{
+    width: 138px;
+    height: 60px;
+    border-radius: 30px;
+    background: #FFDB80;
+    font-weight: 700;
+    margin-top: 30px;
+    align-items: center;
+   
+
+  
+}
+
+@media(max-width:1050px){
+    .container{
+       
+        width: 100%;
+       
+    }
+    
+}
+@media(max-width:770px){
+    .header {
+   
+        margin-top: 30px;
+      
+        
+    }
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        padding: 20px 0px 45px 0px;
+       
+       
+    }
+    .input{
+    
+        width: 90%;
+        
+    }
+    
+}
+
+@media(max-width: 450px){
+    .container{
+        
+        width: 60%;
+       
+    }
+    .input{
+    
+        width: 60%;
+        
+    }
+
+    .containet_checkbox{
+        width: 380px;
+        align-items: center;
+    }
+    
+}
+
+@media(max-width: 350px){
+    .container{
+        
+        width: 45%;
+       
+    }
+    .input{
+    
+        width: 44%;
+        
+    }
+
+    .containet_checkbox{
+        width: 260px;
+        
+    }
+    
+}

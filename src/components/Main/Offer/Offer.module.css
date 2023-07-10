@@ -1,0 +1,131 @@
+@import '../../../assets/fonts/fonts.css';
+
+
+.container{
+    display: flex;
+    position: relative;
+}
+
+
+
+
+.offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 560px;
+    height: 270px;
+    position: absolute;
+    top: 110px;
+    left: 80px;
+
+}
+
+.investments{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 560px; */
+}
+
+.span{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    
+    font-family: 'Montserrat';
+font-size: 16px;
+font-weight: 500;
+color: #FFDB80;
+/* width: 128px; */
+height: 20px;
+padding: 5px;
+border-radius: 10px;
+background-color: #9366dc;
+
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.header{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+
+}
+
+.header_color{
+    font-family: 'Avenir Next';
+    font-size: 36px;
+    font-weight: 600;
+    color: #434364;
+    border-bottom: 4px solid #FDBFA3;
+    padding: 10px;
+}
+
+.experience{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.text{
+    display: flex;
+    font-family: 'Avenir Next';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+
+}
+
+.text_color{
+    display: flex;
+    font-family: 'Avenir Next';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 15px;
+    color:  #434364;
+
+}
+
+.button{
+    width: 200px;
+    border-radius: 88px;
+    background: linear-gradient(90.49deg, #FFEB80 0%, #FDBFA3 100.2%);
+}
+
+.dot{
+    padding: 5px;
+    
+
+   
+}
+
+.carus{
+    display: flex;
+    flex-direction: column;
+    
+ left: 670px;
+}
+
+.containerDot{
+    display: flex;
+   padding: 300px;
+   
+   
+}
+
+
+
+

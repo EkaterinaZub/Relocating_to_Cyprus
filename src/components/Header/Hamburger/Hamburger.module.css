@@ -1,0 +1,40 @@
+.container {
+    width: 50px;
+    height: 50px;
+    /* background-color: aqua; */
+    position: relative;
+    z-index: 2;
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #FFFFFF;
+    left: 5px;
+
+}
+
+.hamburger:nth-child(1) {
+    transform: translateY(20px);
+}
+
+.hamburger:nth-child(2) {
+    transform: translateY(35px);
+}
+
+.hamburger:nth-child(3) {
+    transform: translateY(5px);
+}
+
+
+@media (max-width:1060px) {
+    .hamburger {
+        display: block;
+       
+
+
+    }
+
+}
