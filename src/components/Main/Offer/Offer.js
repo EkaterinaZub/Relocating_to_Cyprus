@@ -7,7 +7,7 @@ export const Offer = () => {
     return (
         
         <Carousel 
-        autoplay={true}
+        // autoplay={true}
         wrapAround={true}
            
 
@@ -50,7 +50,7 @@ export const Offer = () => {
                 offer.map((slider, index) =>
                 
                     <div className={styles.container} key={slider.id}>
-                        <img src={slider.image.src} alt={slider.image.alt} />
+                        <img className={styles.image} src={slider.image.src} alt={slider.image.alt} />
                         <div className={styles.offer}>
                             <div className={styles.investments}>
                                 <span className={styles.span}>{slider.investments}</span>

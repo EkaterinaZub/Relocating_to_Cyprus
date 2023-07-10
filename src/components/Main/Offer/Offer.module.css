@@ -1,57 +1,63 @@
 @import '../../../assets/fonts/fonts.css';
 
 
-.container{
+.container {
     display: flex;
     position: relative;
+}
+
+.image {
+    width: 100%;
 }
 
 
 
 
-.offer{
+.offer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    max-width: 560px;
-    height: 270px;
+    width: 560px;
+    /* height: 270px; */
     position: absolute;
     top: 110px;
     left: 80px;
 
 }
 
-.investments{
+.investments {
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* max-width: 560px; */
+    flex-wrap: wrap;
+    z-index: 1;
 }
 
-.span{
+.span {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    
+
     font-family: 'Montserrat';
-font-size: 16px;
-font-weight: 500;
-color: #FFDB80;
-/* width: 128px; */
-height: 20px;
-padding: 5px;
-border-radius: 10px;
-background-color: #9366dc;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFDB80;
+    /* width: 128px; */
+    height: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #9366dc;
 
 }
 
-.title{
+.title {
     display: flex;
     flex-direction: column;
-   
+
 }
 
-.header{
+.header {
     font-family: 'Montserrat';
     font-size: 36px;
     font-weight: 600;
@@ -60,7 +66,7 @@ background-color: #9366dc;
 
 }
 
-.header_color{
+.header_color {
     font-family: 'Avenir Next';
     font-size: 36px;
     font-weight: 600;
@@ -69,7 +75,7 @@ background-color: #9366dc;
     padding: 10px;
 }
 
-.experience{
+.experience {
     font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 600;
@@ -77,7 +83,7 @@ background-color: #9366dc;
     color: #FFFFFF;
 }
 
-.text{
+.text {
     display: flex;
     font-family: 'Avenir Next';
     font-size: 16px;
@@ -88,44 +94,72 @@ background-color: #9366dc;
 
 }
 
-.text_color{
+.text_color {
     display: flex;
     font-family: 'Avenir Next';
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 15px;
-    color:  #434364;
+    color: #434364;
 
 }
 
-.button{
+.button {
     width: 200px;
     border-radius: 88px;
     background: linear-gradient(90.49deg, #FFEB80 0%, #FDBFA3 100.2%);
 }
 
-.dot{
+.dot {
     padding: 5px;
-    
 
-   
+
 }
 
-.carus{
+.carus {
     display: flex;
     flex-direction: column;
-    
- left: 670px;
+    left: 670px;
 }
 
-.containerDot{
+.containerDot {
     display: flex;
-   padding: 300px;
-   
-   
+    margin: 300px;
+
+
+}
+
+@media(max-width: 1030px) {
+    .offer {
+
+        top: 50px;
+        left: 40px;
+
+    }
+
 }
 
 
+@media(max-width: 800px) {
+    .offer {
+        width: 80%;
+
+    }
+
+}
+
+@media(max-width: 450px) {
+    .span {
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    
+
+    .container {
+        height: 540px;
+    }
 
 
+
+}
