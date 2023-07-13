@@ -3,7 +3,13 @@ import offer2 from '../../assets/images/offer2.png';
 import offer3 from '../../assets/images/offer3.png';
 import offer4 from '../../assets/images/offer4.png';
 import offer5 from '../../assets/images/offer5.png';
-import offer6 from '../../assets/images/offer6.png'
+import offer6 from '../../assets/images/offer6.png';
+import offer1_800 from '../../assets/images/offer1_800.png';
+import offer2_800 from '../../assets/images/offer2_800.png';
+import offer3_800 from '../../assets/images/offer3_800.png';
+import offer6_800 from '../../assets/images/offer6_800.png';
+import offer4_linear from '../../assets/images/offer4_linear.png'
+
 
 
 export const offer = [
@@ -12,6 +18,10 @@ export const offer = [
         image: {
             src: offer1,
             alt: 'offer1'
+        } ,
+        image2: {
+            src: offer1_800,
+            alt: 'offer1_800'
         } ,
         investments: 'investments',
         business: 'dusiness relocation',
@@ -29,6 +39,10 @@ export const offer = [
             src: offer2,
             alt: 'offer2'
         } ,
+        image2: {
+            src: offer2_800,
+            alt: 'offer2_800'
+        } ,
         investments: 'investments',
         business: 'dusiness relocation',
         family: 'family relocation',
@@ -44,8 +58,12 @@ export const offer = [
             src: offer3,
             alt: 'offer3'
         } ,
+        image2: {
+            src: offer3_800,
+            alt: 'offer3_800'
+        } ,
         investments: 'investments',
-        business: 'dusiness relocation',
+        business: 'business relocation',
         family: 'family relocation',
         title: 'Family Relocation',
         text: 'Globally known as one of the safest places to live in the world, Cyprus is the ideal location for families. The healthy lifestyle and family-friendly communities have much to offer to every member of your family.',
@@ -59,8 +77,14 @@ export const offer = [
             src: offer4,
             alt: 'offer4'
         } ,
+        imageBlock: {
+            
+        } ,
+        
+        
+        
         investments: 'investments',
-        business: 'dusiness relocation',
+        business: 'business relocation',
         family: 'family relocation',
         title: 'Business Relocation',
         text: 'Cyprus has a lot to offer for business entrepreneurs who aim to reach for more and expand their business goals. The attractive tax benefits and office locations have transformed Cyprus into a country with endless business opportunities for everyone.',
@@ -75,7 +99,7 @@ export const offer = [
             alt: 'offer5'
         } ,
         investments: 'investments',
-        business: 'dusiness relocation',
+        business: 'business relocation',
         family: 'family relocation',
         title: 'Investing in Yachts',
         text: 'Living on an island is an adventure that opens up a wide range of experiences and possibilities. Here, you can conquer the Mediterranean Sea by renting or owning a yacht as part of your investment plan.',
@@ -89,8 +113,12 @@ export const offer = [
             src: offer6,
             alt: 'offer6'
         } ,
+        image2: {
+            src: offer6_800,
+            alt: 'offer6_800'
+        } ,
         investments: 'investments',
-        business: 'dusiness relocation',
+        business: 'business relocation',
         family: 'family relocation',
         title: 'Moving to Cyprus',
         text: 'Thousands of individuals and families from every part of the globe have immigrated to Cyprus after discovering their perfect place  to call home. The island is now one of the most dominant destinations with huge expat communities.',

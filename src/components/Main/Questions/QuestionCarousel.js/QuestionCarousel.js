@@ -2,14 +2,42 @@ import Carousel from 'nuka-carousel';
 import styles from './QuestionCarousel.module.css'
 import {questions} from '../../../data/questions'
 import { Title } from '../../../../common/Title/Title';
+import { useState, useEffect } from 'react';
 
 export const QuestionCarousel = ()=>{
+    const [screenSize, setScreenSize] = useState(getCurrentDimension());
+    console.log(screenSize)
+    function getCurrentDimension() {
+        return {
+            width: window.innerWidth,
+            height: window.innerHeight
+        }
+        
+    }
+
+    useEffect(() => {
+        const updateDimension = () => {
+            setScreenSize(getCurrentDimension())
+        }
+        window.addEventListener('resize', updateDimension);
+
+        return (() => {
+            window.removeEventListener('resize', updateDimension);
+        })
+    }, [screenSize])
+
+   
+
+    
+
     return(
         <div className={styles.container}>
         <Title title='Frequently Asked Questions' addStyles={styles.title}/>
         <Carousel
-        slidesToShow={3}
-        slidesToScroll={3}
+        
+        slidesToShow={screenSize.width <= 1030  ? 2 : 3 }
+        slidesToScroll={screenSize.width <= 1030 ? 2 : 3 }
+        
         autoplay={true}
         wrapAround={true}
         defaultControlsConfig={{

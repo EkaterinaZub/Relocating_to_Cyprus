@@ -1,0 +1,8 @@
+@import '../../../../assets/fonts/fonts.css';
+
+.text {
+    font-family: 'Avenir Next' 'sans serif';
+    color:#b82e0f;
+    font-size: 12px;
+    font-weight: 500;
+}

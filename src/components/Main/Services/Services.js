@@ -3,6 +3,7 @@ import { Button } from '../../../common/Button/Button'
 import { Title } from '../../../common/Title/Title'
 import {services}  from '../../data/services'
 import styles from './Services.module.css'
+import { Link } from 'react-router-dom'
 
 export const Services = ()=>{
     return(
@@ -15,7 +16,7 @@ export const Services = ()=>{
               <img className={styles.img} src={servic.images.src} alt={servic.images.alt}/>
               <h3 className={styles.title}>{servic.header}</h3>
               <span className={styles.text}>{servic.text}</span>
-              <Button title= 'Find Out More' addStyles={styles.button}/>
+              <Link to = {`/${servic.url}`}><Button title= 'Find Out More' addStyles={styles.button}/></Link>
 
                 </div>
             )

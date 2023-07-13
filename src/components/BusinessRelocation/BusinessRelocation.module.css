@@ -1,0 +1,95 @@
+
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    .banner {
+
+        background-image: url(../../assets/images/pages_business/background_business.png);
+    
+    }
+
+    .order {
+        order: 1;
+    }
+    
+    .image {
+        background-image: url(../../assets/images/pages_business/environment.png);
+    }
+    
+    .image2 {
+        background-image: url(../../assets/images/pages_business/quality.png);
+    }
+    
+    .image3 {
+        background-image: url(../../assets/images/pages_business/outlook.png);
+    }
+
+    .icons {
+        width: 220px;
+        margin-top: 30px;
+    
+    
+    }
+
+   
+    
+    @media (max-width: 1030px) {
+        .banner {
+            background-image: url(../../assets/images/pages_business/background_business1024.png);
+           
+        }
+        .image {
+            background-image: url(../../assets/images/pages_business/environment1024.png);
+        }
+    
+        .image2 {
+            background-image: url(../../assets/images/pages_business/quality1024.png);
+        }
+    
+        .image3 {
+            background-image: url(../../assets/images/pages_business/outlook1024.png);
+        }
+    
+        .order {
+            order: 0;
+        }
+    }
+
+    @media(max-width: 820px) {
+        .banner {
+    
+            background-image: url(../../assets/images/pages_business/background_business800.png);
+    
+        }
+    
+    }
+    
+    @media(max-width: 490px) {
+        .banner {
+    
+            background-image: url(../../assets/images/pages_business/background_business480.png);
+    
+        }
+    
+        .image {
+            background-image: url(../../assets/images/pages_business/environment480.png);
+        }
+    
+        .image2 {
+            background-image: url(../../assets/images/pages_business/quality480.png);
+        }
+    
+        .image3 {
+            background-image: url(../../assets/images/pages_business/outlook480.png);
+        }
+    
+    }
+    
+    

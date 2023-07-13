@@ -42,6 +42,12 @@
 }
 
 @media(max-width:770px){
+    .container{
+        
+        height: 100%;
+        padding: 10px;
+        
+    }
     .header{
        
         width:40%;

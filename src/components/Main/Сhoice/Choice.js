@@ -1,6 +1,5 @@
 import styles from './Choice.module.css'
 import { choice } from '../../data/choice'
-import { Title } from '../../../common/Title/Title'
 import { Section } from '../../../common/Section/Section'
 
 export const Choice = () => {

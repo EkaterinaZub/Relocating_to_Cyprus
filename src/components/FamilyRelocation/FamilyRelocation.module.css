@@ -1,0 +1,92 @@
+@import '../../assets/fonts/fonts.css';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+}
+
+.banner {
+
+    background-image: url(../../assets/images/pages_family/background_family.png);
+
+}
+
+
+
+.order {
+    order: 1;
+}
+
+.image {
+    background-image: url(../../assets/images/pages_family/island_life.png);
+}
+
+.image2 {
+    background-image: url(../../assets/images/pages_family/community.png);
+}
+
+.image3 {
+    background-image: url(../../assets/images/pages_family/expat.png);
+}
+
+.icons {
+    width: 220px;
+    margin-top: 30px;
+
+
+}
+
+
+@media(max-width:1030px) {
+    .banner {
+        background-image: url(../../assets/images/pages_family/background_family_1024.png);
+       
+    }
+
+    
+}
+
+@media (max-width: 1030px) {
+    .image {
+        background-image: url(../../assets/images/pages_family/island_life1000.png);
+    }
+
+    .image2 {
+        background-image: url(../../assets/images/pages_family/community1000.png);
+    }
+
+    .image3 {
+        background-image: url(../../assets/images/pages_family/expat1000.png);
+    }
+
+    .order {
+        order: 0;
+    }
+}
+
+@media(max-width: 490px) {
+    .image {
+        background-image: url(../../assets/images/pages_family/island_life480.png);
+    }
+
+    .image2 {
+        background-image: url(../../assets/images/pages_family/community480.png);
+    }
+
+    .image3 {
+        background-image: url(../../assets/images/pages_family/expat480.png);
+    }
+
+}
+
+@media(max-width: 430px) {
+    .banner {
+
+        background-image: url(../../assets/images/pages_family/background_family_800.png);
+
+    }
+
+}

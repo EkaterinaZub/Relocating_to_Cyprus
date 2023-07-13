@@ -9,21 +9,25 @@ import { Services } from './Services/Services'
 import { WhoWeAre } from './WhoWeAre/WhoWeAre'
 import { Choice } from './Сhoice/Choice'
 
-export const Main = () => {
+
+export const Main = ({stateLocation}) => {
+   
 
     return (
         <div >
         
-            <Offer  />
+         <Offer  />
             <Services />
             <Paradise />
             <Choice />
             <Map />
             <WhoWeAre />
             <HowItWorks />
-            <Contact />
-            <Partners />
-            <QuestionCarousel />
+             
+            {/* <Contact /> */}
+            {/* <Partners /> */}
+            {/* <QuestionCarousel /> */}
+           
 
         </div>
     )

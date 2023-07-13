@@ -6,6 +6,7 @@
     justify-content: space-around;
     align-items: center;
     height: 120px;
+    padding-left: 80px;
     
 }
 
@@ -13,6 +14,14 @@
     width: 180px;
     background: #FFDB80;
     border-radius: 30px;
+}
+
+@media(max-width:1030px){
+    .container {
+        
+        padding-left: 0;
+        
+    }
 }
 
 @media(max-width:430px){
