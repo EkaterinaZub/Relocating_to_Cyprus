@@ -1,7 +1,7 @@
 
 import styles from './App.module.css';
 import { Header } from './components/Header/Header';
-// import { useState } from 'react';
+
 import { Main } from './components/Main/Main';
 import { Footer } from './components/Footer/Footer';
 import { Route, Routes } from 'react-router-dom';
@@ -13,8 +13,10 @@ import { QuestionCarousel } from './components/Main/Questions/QuestionCarousel.j
 import { BusinessRelocation } from './components/BusinessRelocation/BusinessRelocation';
 import { InvestmentsRelocation } from './components/InvestmentsRelocation/InvestmentsRelocation';
 
+
 function App() {
   let { state: stateLocation } = useLocation();
+  
 
   // const [showMenu, setShowMenu] = useState(false)
 

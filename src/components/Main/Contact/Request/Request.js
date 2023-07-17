@@ -26,8 +26,8 @@ export const Request = () => {
     // const [isDisabled, setIsDisabled] = useState(true)
     // const [isShow, setIsShow] = useState(false);
    
-    console.log(isChecked)
-    console.log(error)
+    // console.log(isChecked)
+    // console.log(error)
     // 
 
     const handelChange = (e) => {
@@ -59,14 +59,14 @@ export const Request = () => {
 
         // console.log(state)
         
-        console.log(state)
+        // console.log(state)
 
     }
 
     const sendData = (event) => {
         event.preventDefault();
         setIsShowPopUp(true)
-        console.log(state)
+        // console.log(state)
         setState(getDefaultState())
         
 

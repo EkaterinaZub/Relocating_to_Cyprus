@@ -10,7 +10,7 @@ import { WhoWeAre } from './WhoWeAre/WhoWeAre'
 import { Choice } from './Сhoice/Choice'
 
 
-export const Main = ({stateLocation}) => {
+export const Main = () => {
    
 
     return (

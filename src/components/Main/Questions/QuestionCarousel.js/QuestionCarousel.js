@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 
 export const QuestionCarousel = ()=>{
     const [screenSize, setScreenSize] = useState(getCurrentDimension());
-    console.log(screenSize)
+    // console.log(screenSize)
     function getCurrentDimension() {
         return {
             width: window.innerWidth,

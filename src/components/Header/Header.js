@@ -8,7 +8,7 @@ import { Menu } from './Menu/Menu'
 export const Header = ()=>{
 
     const [showHamburger, setShowHamburger] = useState(false)
-    console.log(showHamburger)
+    // console.log(showHamburger)
 
     return(
         <div className={styles.container}>

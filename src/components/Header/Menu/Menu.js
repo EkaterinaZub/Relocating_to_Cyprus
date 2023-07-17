@@ -6,7 +6,7 @@ import { useState } from 'react'
 export const Menu = ({showHamburger, setShowHamburger}) => {
 
     const [showMenu, setShowMenu] = useState(false)
-    console.log(showMenu)
+    // console.log(showMenu)
     
     return (
         <div  className={[styles.container, showHamburger ? styles.navHeader : ''].join(' ')} >

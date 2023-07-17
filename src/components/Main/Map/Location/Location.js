@@ -5,17 +5,20 @@ import larnaka_map from '../../../../assets/images/map/larnaka_map.png'
 import limassol_map from '../../../../assets/images/map/limassol_map.png'
 import nicosia_map from '../../../../assets/images/map/nicosia_map.png'
 import paphos_map from '../../../../assets/images/map/paphos_map.png'
+// import { CardLocation } from "../CardLocation/CardLocation"
 
 
-export const Location = ()=>{
+export const Location = ({handleclick})=>{
+ 
+   
     return(
         
             <div className={styles.map}>
-            <img className={styles.cyprus} src={cyprus_map} alt='cyprus_map'/> 
-            <img className={styles.larnaka} src={larnaka_map} alt='larnaka_map'/> 
-            <img className={styles.limassol} src={limassol_map} alt='limassol_map'/> 
-            <img className={styles.nicosia} src={nicosia_map} alt='nicosia_map'/> 
-            <img className={styles.paphos} src={paphos_map} alt='paphos_map'/> 
+            <img  className={styles.cyprus} src={cyprus_map} alt='cyprus_map'/> 
+            <img onClick={()=>handleclick('larnaka')} id='larnaka' className={styles.larnaka} src={larnaka_map} alt='larnaka_map'/> 
+            <img onClick={()=>handleclick('limassol')} className={styles.limassol} src={limassol_map} alt='limassol_map'/> 
+            <img onClick={()=>handleclick('nicosia')} className={styles.nicosia} src={nicosia_map} alt='nicosia_map'/> 
+            <img onClick={()=>handleclick('paphos')} className={styles.paphos} src={paphos_map} alt='paphos_map'/> 
             
                 
             </div>

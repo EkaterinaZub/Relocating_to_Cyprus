@@ -1,6 +1,92 @@
+@import '../../assets/fonts/fonts.css';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+}
+
+.banner {
+
+    background-image: url(../../assets/images/pages_investments/background_investments.png);
+
+}
 
 
-.container{
-    background: rgb(122, 55, 55);
-    height: 400px;
+
+.order {
+    order: 1;
+}
+
+.image {
+    background-image: url(../../assets/images/pages_investments/investing.png);
+}
+
+.image2 {
+    background-image: url(../../assets/images/pages_investments/yachts.png);
+}
+
+.image3 {
+    background-image: url(../../assets/images/pages_investments/starting.png);
+}
+
+.icons {
+    width: 220px;
+    margin-top: 30px;
+
+
+}
+
+
+@media(max-width:1030px) {
+    .banner {
+        background-image: url(../../assets/images/pages_investments/background_invesments1024.png);
+       
+    }
+
+    
+}
+
+@media (max-width: 1030px) {
+    .image {
+        background-image: url(../../assets/images/pages_investments/investing1000.png);
+    }
+
+    .image2 {
+        background-image: url(../../assets/images/pages_investments/yachts1000.png);
+    }
+
+    .image3 {
+        background-image: url(../../assets/images/pages_investments/starting1000.png);
+    }
+
+    .order {
+        order: 0;
+    }
+}
+
+@media(max-width: 490px) {
+    .image {
+        background-image: url(../../assets/images/pages_investments/investing480.png);
+    }
+
+    .image2 {
+        background-image: url(../../assets/images/pages_investments/yachts480.png);
+    }
+
+    .image3 {
+        background-image: url(../../assets/images/pages_investments/starting480.png);
+    }
+
+}
+
+@media(max-width: 430px) {
+    .banner {
+
+        background-image: url(../../assets/images/pages_investments/background_investments480.png);
+
+    }
+
 }

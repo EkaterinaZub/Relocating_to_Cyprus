@@ -1,12 +1,13 @@
 import {cyprus} from '../../../data/cyprus'
 import styles from './CardLocation.module.css'
 
-export const CardLocation = ()=>{
-    console.log(cyprus)
+export const CardLocation = ({state, show})=>{
+    console.log(show)
+    if (state)
     return(
         <>
             {
-                cyprus.map(card=>
+                show.map(card=>
                 <div className={styles.container} key={card.id}>
                 
                     <div className={styles.image}>
@@ -22,5 +23,5 @@ export const CardLocation = ()=>{
                 )
             }
         </>
-    )
+    ) 
 }
