@@ -1,4 +1,4 @@
-# Relocating to Berlin
+# Relocating to Cyprus
 
 Q&A about relocating to Cyprusy. All answers are based on our own experience.
 
