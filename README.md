@@ -1,10 +1,17 @@
-# Getting Started with Create React App
+# Relocating to Berlin
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Q&A about relocating to Cyprusy. All answers are based on our own experience.
 
-## Available Scripts
+## How can I submit a question?
 
-In the project directory, you can run:
+Please, create an Issue or a Pull Request. Questions are accepted in English (in case it is difficult for you to express yourself in English we could consider Russian as well).
+
+
+## Features
+As a user you ase able to:
+view page contents
+navigate using the nav bar
+contact the company -book company services
 
 ### `npm start`
 
