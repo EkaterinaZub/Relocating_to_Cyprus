@@ -4,9 +4,9 @@ import provide from '../../assets/images/provide.svg'
 import manage from '../../assets/images/manage.svg'
 
 
-export const howItWorks =[
+export const howItWorks = [
     {
-        id:30,
+        id: 30,
         images: {
             src: listen,
             alt: 'listen'
@@ -15,7 +15,7 @@ export const howItWorks =[
         description: 'Our most prominent purpose is to understand and identify with your needs so we can effectively find ways to provide solutions.'
     },
     {
-        id:31,
+        id: 31,
         images: {
             src: strategize,
             alt: 'strategize'
@@ -24,7 +24,7 @@ export const howItWorks =[
         description: 'According to your requirements, our team designs a thorough series of steps that will make the relocation process as smooth as possible.'
     },
     {
-        id:32,
+        id: 32,
         images: {
             src: provide,
             alt: 'provide'
@@ -33,7 +33,7 @@ export const howItWorks =[
         description: 'We implement our services that are based on efficient strategic planning that respond to your family’s and business’s goals and ambitions.'
     },
     {
-        id:33,
+        id: 33,
         images: {
             src: manage,
             alt: 'manage'

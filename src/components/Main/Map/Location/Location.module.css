@@ -1,5 +1,4 @@
 .map {
-    /* display: flex; */
     position: relative;
     max-width: 100%;
     max-height: 100%;
@@ -8,7 +7,6 @@
 
 .cyprus {
     max-width: 100%;
-    /* display: flex; */
 }
 
 .larnaka {
@@ -16,8 +14,6 @@
     left: 255px;
     top: 212px;
     max-width: 100%;
-    /* z-index: 1; */
-    /* bottom: 20px; */
 
 }
 
@@ -25,26 +21,25 @@
     position: absolute;
     left: 112px;
     top: 267px;
-    /* max-width: 100%; */
+
 }
 
 .nicosia {
     position: absolute;
     left: 91px;
     top: 152px;
-    /* width: 100%; */
+
 }
 
 .paphos {
     position: absolute;
     left: 4px;
     top: 192px;
-    /* width: 100%; */
+
 }
 
 @media(max-width:427px) {
     .limassol {
-
         max-width: 114px;
         left: 52px;
         top: 136px;
@@ -66,15 +61,12 @@
         max-width: 152px;
         top: 85px;
         left: 53px;
-
     }
-
 
 }
 
 @media(max-width:377px) {
     .limassol {
-
         max-width: 86px;
         left: 52px;
         top: 124px;
@@ -95,15 +87,12 @@
         max-width: 142px;
         top: 70px;
         left: 40px;
-
     }
-
 
 }
 
 @media(max-width:321px) {
     .limassol {
-
         max-width: 70px;
         left: 43px;
         top: 104px;
@@ -124,7 +113,6 @@
         max-width: 110px;
         top: 60px;
         left: 38px;
-
     }
 
 

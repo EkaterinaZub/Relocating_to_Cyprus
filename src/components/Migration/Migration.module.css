@@ -1,0 +1,136 @@
+@import '../../assets/fonts/fonts.css';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+}
+
+.banner {
+    background-image: url(../../assets/images/pages_migration/background_migration.png);
+}
+
+
+
+.order {
+    order: 1;
+}
+
+.image {
+    background-image: url(../../assets/images/pages_migration/benefits.png);
+}
+
+.image2 {
+    background-image: url(../../assets/images/pages_migration/invest.png);
+}
+
+.image3 {
+    background-image: url(../../assets/images/pages_migration/information.png);
+}
+
+.icons {
+    width: 220px;
+    margin-top: 30px;
+}
+
+.section {
+    height: 606px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(#FEFC9E -50%, #FDBFA3 100.2%);
+    align-items: center;
+    padding: 50px;
+}
+
+.container_title {
+    color: #434364;
+}
+
+.containerLink {
+    display: flex;
+    flex-direction: column;
+}
+
+.discription {
+    width: 770px;
+    font-family: 'Avenir Next';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #434364;
+    text-align: center;
+}
+
+.link {
+    color: #6D31D0;
+    padding: 3px;
+}
+
+
+@media(max-width:1030px) {
+    .banner {
+        background-image: url(../../assets/images/pages_migration/background_migration1024.png);
+    }
+
+    .image {
+        background-image: url(../../assets/images/pages_migration/benefits1024.png);
+    }
+
+    .image2 {
+        background-image: url(../../assets/images/pages_migration/invest1024.png);
+    }
+
+    .image3 {
+        background-image: url(../../assets/images/pages_migration/information1024.png);
+    }
+
+    .order {
+        order: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .section {
+
+        height: 580px;
+
+    }
+
+    .discription {
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 540px) {
+    .section {
+        height: 790px;
+    }
+
+}
+
+@media(max-width: 490px) {
+    .image {
+        background-image: url(../../assets/images/pages_migration/benefits480.png);
+    }
+
+    .image2 {
+        background-image: url(../../assets/images/pages_migration/invest480.png);
+    }
+
+    .image3 {
+        background-image: url(../../assets/images/pages_migration/information480.png);
+    }
+
+}
+
+@media (max-width: 330px) {
+    .section {
+        height: 840px;
+    }
+
+}

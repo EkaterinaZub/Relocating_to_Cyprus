@@ -1,23 +1,21 @@
-.banner{
+.banner {
     display: flex;
-   
     height: 530px;
     align-items: center;
 }
 
-.container_title{
+.container_title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 130px;
 }
 
-.title{
+.title {
     font-family: 'Montserrat' 'sans serif';
     text-transform: none;
     color: #434364;
     width: 360px;
-   
 }
 
 @media(max-width:1030px) {

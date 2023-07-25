@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '../../../../common/Button/Button'
 import { Title } from '../../../../common/Title/Title'
 import styles from './Request.module.css'
@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { PopUp } from '../PopUp/PopUp'
 import { ErrorValidate } from '../ErrorValidate/ErrorValidate'
 import { useValidate } from '../UseValidate/usevalidate'
+import Cookies from 'js-cookie'
 
 const initialState = {
     name: '',
@@ -22,18 +23,22 @@ export const Request = () => {
     const [state, setState] = useState(initialState)
     const [isChecked, setIsChecked] = useState(false)
     const [IsShowPopUp, setIsShowPopUp] = useState(false)
+    const [isDisabled, setIsDisabled] = useState(false);
     const { error, validate } = useValidate()
-    // const [isDisabled, setIsDisabled] = useState(true)
-    // const [isShow, setIsShow] = useState(false);
-   
-    // console.log(isChecked)
-    // console.log(error)
-    // 
+
+
+    useEffect(() => {
+        const disabled = Object.values(error).find(el => el !== '') ||
+            state.name === '' || state.email === '' ||
+            state.phone === '' || !isChecked;
+        setIsDisabled(disabled)
+    }, [error, state.name, state.email, state.phone, isChecked])
+
 
     const handelChange = (e) => {
 
         const { name, value, type, checked } = e.target
-        // console.log(name)
+
         const setValue = type === 'checkbox' ? checked : value
 
         validate(name, value)
@@ -55,20 +60,18 @@ export const Request = () => {
 
     const handelSubmit = (e) => {
         e.preventDefault()
-
-
-        // console.log(state)
-        
-        // console.log(state)
-
     }
+
 
     const sendData = (event) => {
         event.preventDefault();
-        setIsShowPopUp(true)
-        // console.log(state)
+
+        Cookies.set('name', state, { expires: 1, path: '' })
+        if (!isDisabled) {
+            setIsShowPopUp(true)
+            console.log(state)
+        }
         setState(getDefaultState())
-        
 
     }
 
@@ -125,19 +128,17 @@ export const Request = () => {
                         />
                         <ErrorValidate error={error} name='phone' />
                     </div>
-
-               
-                <div className={styles.form_input}>
-                    <input
-                        className={[styles.input, styles.message].join(' ')}
-                        type='text'
-                        placeholder='Your message'
-                        value={state.message}
-                        onChange={handelChange}
-                        name="message"
-                    />
-                    <ErrorValidate error={error} name='message' />
-                </div>
+                    <div className={styles.form_input}>
+                        <input
+                            className={[styles.input, styles.message].join(' ')}
+                            type='text'
+                            placeholder='Your message'
+                            value={state.message}
+                            onChange={handelChange}
+                            name="message"
+                        />
+                        <ErrorValidate error={error} name='message' />
+                    </div>
                 </div>
                 <div className={styles.containet_checkbox}>
                     <input className={styles.checkbox} id="checkbox" type='checkbox'
@@ -147,24 +148,16 @@ export const Request = () => {
                             handelChange(e)
                             setIsChecked(!isChecked)
                         }}
-                        // checked={state.agree === true}
-
                     />
                     <label htmlFor="checkbox" className={styles.text}></label>
-
-
                     <span className={styles.text}>By clicking “Submit button” you accept our <Link className={styles.link}>Terms & Conditions </Link>and have read our <Link className={styles.link}> Privacy Policy</Link> and <Link className={styles.link}>Disclaimer </Link></span>
                 </div>
                 <Button title='Submit' addStyles={styles.button} type='submit'
                     onClick={sendData}
-                    disabled={!isChecked}
-               
+                    disabled={isDisabled}
                 />
-
             </form>
-
             {IsShowPopUp && <PopUp setIsShowPopUp={setIsShowPopUp} />}
-
         </div>
 
     )

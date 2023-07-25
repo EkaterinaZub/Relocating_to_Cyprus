@@ -1,6 +1,6 @@
 import styles from './Information.module.css'
 
-export const Information = ({ addStyles, paragraph, addStyles2, addStyles3 , header, text1, text2,list1, list2, list3, list4, list5, list6,list7, text3 }) => {
+export const Information = ({ addStyles, paragraph, addStyles2, addStyles3, header, text1, text2, list1, list2, list3, list4, list5, list6, list7, text3 }) => {
     return (
         <div className={[styles.container, addStyles].join(' ')}>
             <div className={[styles.discription, addStyles3].join(' ')}>

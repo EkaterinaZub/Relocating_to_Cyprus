@@ -1,12 +1,11 @@
 @import '../../assets/fonts/fonts.css';
 
-.button{
-    
+.button {
     height: 48px;
     border: none;
 }
 
-.text{
+.text {
     font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 600;

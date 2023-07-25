@@ -4,8 +4,9 @@ import { offer } from '../../data/offer'
 import { Button } from '../../../common/Button/Button';
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
+import { EffectComponents } from '../EffectComponents/EffectComponents';
 
-export const Offer = () => {
+export const Offer = ({ weather }) => {
     const [screenSize, setScreenSize] = useState(getCurrentDimension());
 
     function getCurrentDimension() {
@@ -28,21 +29,21 @@ export const Offer = () => {
                     background: 'rgba(0, 0, 0, 0)'
 
                 },
-                prevButtonClassName:  styles.buttonStyle,
+                prevButtonClassName: styles.buttonStyle,
                 nextButtonText: ' ',
-                nextButtonClassName:  styles.buttonStyle,
+                nextButtonClassName: styles.buttonStyle,
                 prevButtonStyle: {
                     background: 'rgba(0, 0, 0, 0)'
 
                 },
                 // {
-                    // position: 'absolute',
-                    // display: 'none'
-                    // width: '200px',
-                    // height: '200px',
-                    // padding: '200px',
-                    // marginLeft: '-300px',
-                    // background: 'rgba(0, 0, 0, 0)',
+                // position: 'absolute',
+                // display: 'none'
+                // width: '200px',
+                // height: '200px',
+                // padding: '200px',
+                // marginLeft: '-300px',
+                // background: 'rgba(0, 0, 0, 0)',
 
                 // },
                 prevButtonText: ' ',
@@ -62,17 +63,10 @@ export const Offer = () => {
                     <div className={styles.container} key={slider.id}>
                         {
                             (screenSize.width < 900 && slider.image2) ?
-                            
+
                                 <img className={styles.image} src={slider.image2.src} alt={slider.image2.alt} /> :
                                 <img className={styles.image} src={slider.image.src} alt={slider.image.alt} />
                         }
-                        {/* <div className={styles.imgBlock}>
-                            {
-                                slider.image2 ?
-                                    <img className={styles.image} src={slider.image2.src} alt={slider.image2.alt} /> : ''
-                            } */}
-                        {/* <img className={styles.image} src={slider.image.src} alt={slider.image.alt} /> */}
-                        {/* </div> */}
                         <div className={styles.offer}>
                             <div className={styles.investments}>
                                 <Link to='/investments' className={styles.span}>{slider.investments}</Link>
@@ -90,8 +84,13 @@ export const Offer = () => {
                                 }
                                 <span className={index === 1 || index === 2 || index === 4 ? styles.text_color : styles.text}>{slider.text}</span>
                             </div>
-                            <Button title={slider.buttonTitle} addStyles={styles.button} />
+                            <Link to={slider.link}>
+                            <Button title={slider.buttonTitle} addStyles={styles.button} /></Link>
+                            <EffectComponents weather={weather} />
                         </div>
+
+
+
                     </div>
 
                 )

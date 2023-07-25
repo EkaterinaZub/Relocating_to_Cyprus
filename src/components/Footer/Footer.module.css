@@ -1,6 +1,6 @@
 @import '../../assets/fonts/fonts.css';
 
-.container{
+.container {
     display: flex;
     background: #959ee7;
     min-height: 100px;
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.item{
+.item {
     font-family: 'Avenir Next' 'sans serif';
     font-size: 16px;
     font-weight: 400;
@@ -16,37 +16,34 @@
     color: #FFFFFF;
     letter-spacing: 0.5px;
     padding: 0 10px 0px 10px;
-   
- 
 }
 
-.line{
+.line {
     width: 2px;
     height: 19px;
     background-color: #FFFFFF;
 }
-.question{
+
+.question {
     margin-left: 150px;
     margin-right: 100px;
 }
 
-@media(max-width:1030px){
-    .container{
+@media(max-width:1030px) {
+    .container {
         justify-content: center;
     }
 
-    .question{
+    .question {
         margin-left: 30px;
         margin-right: 0px;
     }
-    
+
 }
 
-@media(max-width:1030px){
-    .container{
+@media(max-width:1030px) {
+    .container {
         flex-wrap: wrap;
     }
-
-    
     
 }

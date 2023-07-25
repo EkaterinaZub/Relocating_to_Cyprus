@@ -1,17 +1,14 @@
-@import '../../assets/fonts/fonts.css';
+
 
 .container {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
-
 }
 
 .banner {
-
     background-image: url(../../assets/images/pages_family/background_family.png);
-
 }
 
 
@@ -35,18 +32,13 @@
 .icons {
     width: 220px;
     margin-top: 30px;
-
-
 }
 
 
 @media(max-width:1030px) {
     .banner {
         background-image: url(../../assets/images/pages_family/background_family_1024.png);
-       
     }
-
-    
 }
 
 @media (max-width: 1030px) {
@@ -84,9 +76,7 @@
 
 @media(max-width: 430px) {
     .banner {
-
         background-image: url(../../assets/images/pages_family/background_family_800.png);
-
     }
 
 }

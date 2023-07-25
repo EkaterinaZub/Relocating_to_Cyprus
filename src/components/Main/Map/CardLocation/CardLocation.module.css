@@ -1,32 +1,28 @@
 @import '../../../../assets/fonts/fonts.css';
 
-.container{
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-max-width: 480px;
-/* max-height: 100%; */
-border-radius: 10px;
-background: #FFFFFF;
-max-height: 660px;
-padding: 10px;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 480px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    padding: 10px;
 
 
 }
 
 
-.image{
+.image {
     display: flex;
     justify-content: space-evenly;
-    /* padding: 0 10px 0px 0px; */
- 
 }
 
-.img{
+.img {
     border-radius: 10px, 10px, 4px, 4px;
 }
 
-.title{
+.title {
     text-align: center;
     font-family: 'Montserrat' 'sans serif';
     font-size: 20px;
@@ -35,7 +31,7 @@ padding: 10px;
 
 }
 
-.description{
+.description {
     padding: 10px 50px 0px 50px;
     text-align: center;
     font-family: 'Avenir Next' 'sans serif';
@@ -44,9 +40,16 @@ padding: 10px;
     color: #434364;
 }
 
-@media(max-width:460px){
-    .img{
+@media(max-width:460px) {
+    .container {
+        height: 100%;
+        padding: 0;
+
+    }
+
+    .img {
         max-width: 105px;
+        margin-top: 5px;
     }
 
 }

@@ -4,7 +4,6 @@ import { useState } from "react";
 export const useValidate = () => {
     const [error, setError] = useState({})
     const pattern = new RegExp((/^\+375\(\d{2}\)\d{7}$/))
-    const number = new RegExp((/[0-9]/))
     const email = new RegExp(( /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i))
 
 
@@ -13,7 +12,7 @@ export const useValidate = () => {
 
         switch (name) {
             case 'name': {
-                console.log(value)
+                
                 if (value.length < 2 || value.length > 15) {
                     setError({ ...error, firstName: 'incorrect length!' })
                 } else {
@@ -22,7 +21,7 @@ export const useValidate = () => {
                 break
             }
             case 'phone': {
-                console.log(value)
+               
                 if (!pattern.test(value)) {
                     setError({ ...error, phone: 'Please enter valid Mobile Number!' })
                 } else {

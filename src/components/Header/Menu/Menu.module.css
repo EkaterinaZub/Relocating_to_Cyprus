@@ -1,73 +1,67 @@
 @import '../../../assets/fonts/fonts.css';
 
-.container{
+.container {
     display: flex;
     position: relative;
-    
+
 }
 
-.menu{
+.menu {
     font-family: 'Avenir_Next';
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     color: #FFFFFF;
     padding: 10px 10px;
-    /* z-index: 2; */
-    
+
 }
 
 
 
-.subMenu{
+.subMenu {
     display: none;
-    /* display: flex; */
     flex-direction: column;
-   
-    
+
 }
 
-.subMenuShow{
+.subMenuShow {
     position: absolute;
     top: 30px;
     left: 130px;
-   
-    /* display: none; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 280px;
     padding-bottom: 5px;
-    /* height: 82px; */
     background: #FFFFFF;
-    border-radius: 10px ;
+    border-radius: 10px;
     z-index: 2;
-    
+
 }
 
-.subMenu_item{
+.subMenu_item {
     text-decoration: none;
     font-family: 'Avenir_Next';
     font-size: 18px;
     font-weight: 400;
     color: #434364;
     padding: 5px 0;
-    
-   
+
 }
-.subMenu_item:hover{
-  border-bottom: 2px solid #53269D;
- 
+
+.subMenu_item:hover {
+    border-bottom: 2px solid #53269D;
+
 }
 
 @media (max-width:1060px) {
-    .container{
+    .container {
         display: none;
-       
+
     }
 
-    .navHeader{
+    .navHeader {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -78,82 +72,54 @@
         gap: 5px;
         z-index: 2;
         align-items: center;
-        
-       
-    }
-    .menu{
-        color:  #434364;
-        padding: 10px;
-    
     }
 
-    .subMenuShow{
-        
+    .menu {
+        color: #434364;
+        padding: 10px;
+    }
+
+    .subMenuShow {
         top: 60px;
         left: -230px;
         max-width: 230px;
         border-radius: 10px 0 0 10px;
-        
-        
-        
     }
-
-    
-    
 
 }
+
 @media (max-width:768px) {
-    
-    .navHeader{
-        
+
+    .navHeader {
         left: 589px;
         top: 90px;
-        
-        
-       
     }
-    
-    
-    
 
 }
 
 @media (max-width:430px) {
-    
-    .navHeader{
-        
+
+    .navHeader {
         left: 250px;
         top: 90px;
-        
-        
-       
     }
-    
-    
-    
-
 }
+
 @media (max-width:380px) {
-    
-    .navHeader{
-        
+
+    .navHeader {
         left: 205px;
         top: 90px;
-        
-    }
-    .subMenuShow{
-        
-        left: -200px;
-        max-width: 200px;
-       
-        
     }
 
-    .subMenu_item{
+    .subMenuShow {
+
+        left: -200px;
+        max-width: 200px;
+    }
+
+    .subMenu_item {
         text-align: center;
     }
-    
-    
-    
 
 }

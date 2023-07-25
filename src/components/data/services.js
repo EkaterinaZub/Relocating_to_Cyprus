@@ -6,7 +6,7 @@ import investment_schemes from '../../assets/images/investment_schemes.png';
 
 export const services = [
     {
-        id:1,
+        id: 1,
         url: "family",
         images: {
             src: family_relocation,
@@ -17,7 +17,7 @@ export const services = [
     },
 
     {
-        id:2,
+        id: 2,
         url: "business",
         images: {
             src: business_relocation,
@@ -28,7 +28,7 @@ export const services = [
     },
 
     {
-        id:3,
+        id: 3,
         url: "investments",
         images: {
             src: investment_schemes,

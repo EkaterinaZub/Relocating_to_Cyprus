@@ -5,12 +5,12 @@ import { constants } from '../../constants/constants'
 import { Section } from '../../common/Section/Section'
 import { helpBusiness } from '../data/helpBusiness'
 
-export const BusinessRelocation = ()=>{
-return (
-    <div className={styles.container}>
-       <Banner title="Business Relocation" 
-        addStyles={styles.banner} />
-            
+export const BusinessRelocation = () => {
+    return (
+        <div className={styles.container}>
+            <Banner title="Business Relocation"
+                addStyles={styles.banner} />
+
             <Information addStyles2={styles.image}
                 header={constants.business_block1.header}
                 text1={constants.business_block1.text1}
@@ -23,7 +23,7 @@ return (
                 text3={constants.business_block1.text3}
             />
             <Information addStyles2={styles.image2}
-            addStyles3={styles.order}
+                addStyles3={styles.order}
                 header={constants.business_block2.header}
                 text1={constants.business_block2.text1}
                 text2={constants.business_block2.text2}
@@ -47,11 +47,11 @@ return (
                 text3={constants.business_block3.text3}
             />
 
-            <Section title='How We Can Help' 
-            products={helpBusiness} 
-            addStyles={styles.section}
-            addStyles3={styles.icons}
+            <Section title='How We Can Help'
+                products={helpBusiness}
+                addStyles={styles.section}
+                addStyles3={styles.icons}
             />
-    </div>
-)
+        </div>
+    )
 }

@@ -1,19 +1,20 @@
-.container{
-    /* height: 680px; */
+@import '../../assets/fonts/fonts.css';
+
+.container {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: linear-gradient( #FEFC9E -50%, #FDBFA3 100.2%);
+    background: linear-gradient(#FEFC9E -50%, #FDBFA3 100.2%);
     align-items: center;
     padding: 50px;
-    
+
 
 }
 
 .description {
     width: 580px;
-    font-family: 'Avenir Next' ;
+    font-family: 'Avenir Next';
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -21,35 +22,31 @@
     letter-spacing: 0.6px;
     text-align: center;
     margin-bottom: 20px;
-    
+
 }
 
 
-.icons{
+.icons {
     display: flex;
     gap: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px;
-
-
 }
 
-.icon{
+.icon {
     width: 260px;
-    /* height: 308px; */
     display: flex;
     flex-direction: column;
-    
     align-items: center;
 }
 
-.img{
+.img {
     width: 150px;
     margin-bottom: 30px;
 }
 
-.header{
+.header {
     font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 600;
@@ -58,7 +55,7 @@
     text-align: center;
 }
 
-.text{
+.text {
     font-family: 'Avenir Next';
     font-size: 16px;
     font-weight: 400;
@@ -68,77 +65,64 @@
     text-align: center;
 }
 
-.container_title{
+.container_title {
     color: #434364;
-    /* margin-bottom: 20px; */
 }
 
-@media (max-width:1040px){
-    .container{
+@media (max-width:1040px) {
+    .container {
         padding: 40px;
     }
-    .container_title{
+
+    .container_title {
         margin-bottom: 30px;
     }
-    .icons{
-        
-        gap:20px;
+
+    .icons {
+        gap: 20px;
         padding-left: 40px;
         padding-right: 40px;
-        
-    
-    
+
     }
 
 }
-@media (max-width:755px){
-    
-    
+
+@media (max-width:755px) {
+
     .description {
         width: 100%;
-       
     }
-    .icon{
+
+    .icon {
         width: 190px;
         height: 100%;
         margin-bottom: 10px;
-        
     }
-    .icons{
-        
-        
+
+    .icons {
         padding-left: 30px;
         padding-right: 30px;
-        /* flex-direction: column; */
-        
-    
-    
     }
 }
 
 
-@media (max-width:580px){
-    
-    
-    .icons{
-        
-        /* gap: 20px; */
+@media (max-width:580px) {
+
+
+    .icons {
         padding-left: 0px;
         padding-right: 0px;
-        /* flex-direction: column; */
-        
-    
-    
+
     }
 }
 
-@media (max-width:480px){
-    .container{
+@media (max-width:480px) {
+    .container {
         padding: 10px;
     }
-    .container_title{
+
+    .container_title {
         text-align: center;
     }
-    
-}
 
+}

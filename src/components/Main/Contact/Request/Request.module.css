@@ -1,6 +1,6 @@
 @import '../../../../assets/fonts/fonts.css';
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -8,41 +8,35 @@
     padding: 20px;
     width: 1180px;
     border-radius: 60px;
-    background: linear-gradient( #e6c8b8 10%, #c995dc 100.2%);
+    background: linear-gradient(#e6c8b8 10%, #c995dc 100.2%);
 }
-
-
 
 .header {
-   
     color: #434364;
     font-size: 28px;
-  
-    
 }
 
-.form{
-    
+
+.form {
     width: 580px;
     text-align: center;
-   
 }
 
-.form_group{
+.form_group {
     display: flex;
     flex-wrap: wrap;
     width: 580px;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.form_input{
-    
+
+.form_input {
+
     display: flex;
     flex-direction: column;
 }
 
-.input{
-    
+.input {
     width: 280px;
     height: 47px;
     border-radius: 20px;
@@ -55,55 +49,52 @@
     margin: 5px;
 }
 
-.message{
+.input:focus {
+    outline: none;
+}
+
+.message {
     width: 580px;
     height: 200px;
     border: none;
 }
 
-.containet_checkbox{
+.containet_checkbox {
     display: flex;
     margin-top: 20px;
 }
+
 .checkbox {
-    /* display: flex; */
     width: 32px;
     height: 32px;
     margin-right: 10px;
     opacity: 0;
     border: 1px solid #FFFFFF;
-    
+
 }
 
-/* .checkbox ~ label::before{
-    .checkbox{
-        opacity: 0;
-    } 
-    
-} */
 
-   
-.checkbox ~ label::before{
-    content: '';  
+.checkbox~label::before {
+    content: '';
     align-items: center;
-  text-align: center;
-  color:#FFFFFF;
-  /* line-height: 1em; */
-  width: 32px;
-  height: 32px;
-  border: 1px solid #FFFFFF;
-  border-radius: 0.25em;
-  margin-left: -30px;
-  display: inline-block;
- 
+    text-align: center;
+    color: #FFFFFF;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #FFFFFF;
+    border-radius: 0.25em;
+    margin-left: -30px;
+    display: inline-block;
+
 }
-.checkbox:checked ~ label::before {
+
+.checkbox:checked~label::before {
     content: '\2713';
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
 }
 
-.text{
+.text {
     font-family: 'Avenir Next' 'sans serif';
     color: #434364;
     font-size: 16px;
@@ -112,11 +103,11 @@
     text-align: start;
 }
 
-.link{
+.link {
     color: #6D31D0;
 }
 
-.button{
+.button {
     width: 138px;
     height: 60px;
     border-radius: 30px;
@@ -124,94 +115,46 @@
     font-weight: 700;
     margin-top: 30px;
     align-items: center;
-   
 
-  
 }
 
-@media(max-width:1220px){
-    .container{
+@media(max-width:1220px) {
+    .container {
         width: 100%;
-       
     }
-    
+
 }
-@media(max-width:770px){
-    .container{
-        
+
+@media(max-width:770px) {
+    .container {
         width: 90%;
-      /* padding-left: 40px; */
-       
     }
-    .form{
-        width:100%;
-        
-       
+
+    .form {
+        width: 100%;
     }
+
     .header {
-   
         margin-top: 30px;
-       
     }
-    .form_group{
-       
+
+    .form_group {
         width: 100%;
         justify-content: center;
     }
-    .message{
+
+    .message {
         width: 280px;
         height: 100px;
     }
-    
-    
+
+
 }
 
-@media(max-width:600px){
-   
-   
-    .form_group{
-       
+@media(max-width:600px) {
+    .form_group {
         width: 100%;
-        
+
     }
-   
-    
+
 }
-
-/* @media(max-width: 450px){
-    .container{
-        
-        width: 60%;
-       
-    }
-    .input{
-    
-        width: 60%;
-        
-    }
-
-    .containet_checkbox{
-        width: 380px;
-        align-items: center;
-    }
-    
-}
-
-@media(max-width: 350px){
-    .container{
-        
-        width: 45%;
-       
-    }
-    .input{
-    
-        width: 44%;
-        
-    }
-
-    .containet_checkbox{
-        width: 260px;
-        
-    }
-    
-} */

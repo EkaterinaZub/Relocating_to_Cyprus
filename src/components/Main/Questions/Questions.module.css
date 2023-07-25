@@ -1,13 +1,12 @@
-
-.container{
+.container {
     height: 830px;
-    background: linear-gradient( #6D31D0 10%, #959ee7 100.2%);
+    background: linear-gradient(#6D31D0 10%, #959ee7 100.2%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
-.title{
+.title {
     color: #FFFFFF;
 }

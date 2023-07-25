@@ -4,9 +4,9 @@ import weather from '../../assets/images/weather.svg'
 import family_oriented from '../../assets/images/family_oriented.svg'
 
 
-export const choice =[
+export const choice = [
     {
-        id:20,
+        id: 20,
         images: {
             src: system,
             alt: 'system'
@@ -15,7 +15,7 @@ export const choice =[
         description: 'Offering one of the most attractive tax regimes in Europe'
     },
     {
-        id:21,
+        id: 21,
         images: {
             src: weather,
             alt: 'weather'
@@ -24,7 +24,7 @@ export const choice =[
         description: 'Enjoy a high quality of life with over 324 days of sun annually'
     },
     {
-        id:22,
+        id: 22,
         images: {
             src: expat,
             alt: 'expat'
@@ -33,7 +33,7 @@ export const choice =[
         description: 'Become part of an increasingly diverse community'
     },
     {
-        id:23,
+        id: 23,
         images: {
             src: family_oriented,
             alt: 'family_oriented'
