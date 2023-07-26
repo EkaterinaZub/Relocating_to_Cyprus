@@ -60,7 +60,7 @@ function App() {
           <QuestionCarousel />
         </>}
       <Footer />
-      <CookieConsent debug={true}
+      <CookieConsent className={styles.banner} debug={true}
         style={{ background: 'white' }}
         contentStyle={{ color: 'black' }}
         buttonStyle={{ color: '#434364', background: 'linear-gradient(90.49deg, #FFEB80 0%, #FDBFA3 100.2%)', borderRadius: '20px' }}
