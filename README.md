@@ -29,9 +29,7 @@ Urban Nest is built using the following technologies:
 
 + Clone the repository to your local machine.
 + Install the necessary dependencies using the package manager of your choice.
-+ Set up the database and configure the connection details.
-+ Start the application server.
-+ Access the website through your preferred web browser.
+
 
 ### `npm start`
 
